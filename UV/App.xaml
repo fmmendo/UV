@@ -1,0 +1,12 @@
+﻿<Application
+    x:Class="UV.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UV">
+    <Application.Resources>
+        <ResourceDictionary>
+            <local:SkinTypeConverter x:Key="SkinTypeConverter"/>
+            <local:ExposureColorConverter x:Key="ExposureColorConverter"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
