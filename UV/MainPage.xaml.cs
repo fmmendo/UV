@@ -40,9 +40,6 @@ namespace UV
             _vm = new MainViewModel(Dispatcher);
             DataContext = _vm;
 
-            //SelectedLocationType = LocationTypes[0];
-            //DataContext = this;
-
             this.InitializeComponent();
             loadingRing.Visibility = Windows.UI.Xaml.Visibility.Visible;
             this.NavigationCacheMode = NavigationCacheMode.Required;
