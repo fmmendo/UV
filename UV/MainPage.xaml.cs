@@ -162,5 +162,10 @@ namespace UV
             _vm.CalculateModifiedUvIndex();
             _vm.Description = _vm.GetDescription();
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AboutPage));
+        }
     }
 }
