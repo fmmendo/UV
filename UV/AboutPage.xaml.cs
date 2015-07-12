@@ -29,7 +29,7 @@ namespace UV
 
         private async void HyperlinkButton_Click(object sender, RoutedEventArgs e)
         {
-            await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-windows-store:reviewapp?appid=12d59edb-509f-e011-986b-78e7d1fa76f8"));
+            await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-windows-store:reviewapp?appid=b4b91fe5-3770-4043-967d-c8985b19e1eb1"));
         }
 
         private async void HyperlinkButton_Click_1(object sender, RoutedEventArgs e)

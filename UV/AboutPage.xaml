@@ -45,8 +45,8 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <TextBlock Margin="12,20">
-
+            <TextBlock Margin="12,20" Foreground="Black" TextWrapping="WrapWholeWords" FontSize="18">
+                UV provides with more actionable information regarding UV data from your Microsoft Band.
             </TextBlock>
             <HyperlinkButton 
                 Grid.Row="1" 

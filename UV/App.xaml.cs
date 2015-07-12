@@ -1,6 +1,7 @@
 ﻿using System;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
+using Windows.Phone.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Animation;
@@ -25,6 +26,22 @@ namespace UV
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+            HardwareButtons.BackPressed += OnBackPressed;
+        }
+
+        private void OnBackPressed(object sender, BackPressedEventArgs e)
+        {
+            var RootFrame = Window.Current.Content as Frame;
+            if (RootFrame == null)
+            {
+                return;
+            }
+
+            if (RootFrame.CanGoBack)
+            {
+                RootFrame.GoBack();
+                e.Handled = true;
+            }
         }
 
         /// <summary>
