@@ -40,11 +40,9 @@ namespace UV
             _vm = new MainViewModel(Dispatcher);
             DataContext = _vm;
 
-            //SelectedLocationType = LocationTypes[0];
-            //DataContext = this;
-
             this.InitializeComponent();
             loadingRing.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            loadingRing.IsActive = true;
             this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
@@ -90,6 +88,8 @@ namespace UV
                 await Band.SensorManager.Ultraviolet.StopReadingsAsync();
 
                 loadingRing.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+                loadingRing.IsActive = false;
+
             }
         }
 
@@ -100,8 +100,8 @@ namespace UV
                 switch (e.SensorReading.ExposureLevel)
                 {
                     case UltravioletExposureLevel.None:
-                        _vm.UvLevel = "None";
-                        break;
+                        //_vm.UvLevel = "None";
+                        //break;
                     case UltravioletExposureLevel.Low:
                         _vm.UvLevel = "Low";
                         _vm.MinIndex = 1;
@@ -164,6 +164,11 @@ namespace UV
         {
             _vm.CalculateModifiedUvIndex();
             _vm.Description = _vm.GetDescription();
+        }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AboutPage));
         }
     }
 }

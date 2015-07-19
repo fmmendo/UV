@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="2472fmmendo.UV" Publisher="CN=C87E6CA5-4279-4D64-99CC-FA01F995C667" Version="1.0.0.0" />
+  <Identity Name="2472fmmendo.UV" Publisher="CN=C87E6CA5-4279-4D64-99CC-FA01F995C667" Version="1.0.0.2" />
   <mp:PhoneIdentity PhoneProductId="a377d07a-dd3a-419a-9b92-4177c33d135a" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>UV</DisplayName>
